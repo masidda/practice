@@ -3,28 +3,63 @@
 <head>
     <title>To the WEB - CSS</title>
     <meta charset="UTF-8">
+    <style>
+        #grid {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+        }
+        #grid ol{
+            padding-left: 40px;
+        }
+        #article {
+            padding-left: 10px;
+        }
+        body{
+            margin: 0px;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        h1 {
+            font-size: 50px;
+            text-align: center;
+            border-bottom: 1px goldenrod solid;
+            margin: 0px;
+            padding: 20px;
+        }
+        ol{
+            border-right: 1px goldenrod solid;
+            width: 100px;
+            margin: 0px;
+            padding: 30px;
+        }
+        
+    </style>
 </head>
 
 <body>
     <h1><a href="index.html">WEB</a> </h1>
-    <ol>
-        <li><a href="1.html">HTML</a> </li>
-        <li><a href="2.html">CSS</a> </li>
-        <li><a href="3.html">JavaScript</a> </li>
-    </ol>
-    <p>
-    <h1>What is "CSS"?</h1>
-    CSS (Cascading Style Sheets)는 웹페이지를 꾸미려고 작성하는 코드입니다.<br>
-    어떻게 하면 글자색을 검정이나 빨갛게 할 수 있을까?<br>
-    어떻게 하면 콘텐츠를 화면의 이런 저런 곳에 보이게 할 수 있을까?<br>
-    어떻게 하면 배경 이미지와 색상들로 웹페이지를 꾸밀 수 있을까?<br>
-    </p>
-    <br>
-    <p>
-    <h3>그래서 CSS가 뭔데요...?</h3>
-    HTML와 같이 CSS는 실제로 프로그래밍 언어는 아닙니다. 마크업(markup) 언어 도 아닙니다. Style sheet 언어 입니다.<br>
-    HTML 문서에 있는 요소들에 선택적으로 스타일을 적용할 수 있다는 말입니다.
-    </p>
+    <div id="grid">
+        <ol>
+            <li><a href="1.html">HTML</a> </li>
+            <li><a href="2.html">CSS</a> </li>
+            <li><a href="3.html">JavaScript</a> </li>
+        </ol>
+        <div id="article">
+            <h2>What is "CSS"?</h2>
+            CSS (Cascading Style Sheets)는 웹페이지를 꾸미려고 작성하는 코드입니다.<br>
+            어떻게 하면 글자색을 검정이나 빨갛게 할 수 있을까?<br>
+            어떻게 하면 콘텐츠를 화면의 이런 저런 곳에 보이게 할 수 있을까?<br>
+            어떻게 하면 배경 이미지와 색상들로 웹페이지를 꾸밀 수 있을까?<br>
+            <br>
+            <p>
+            <h2>그래서 CSS가 뭔데요...?</h2>
+            HTML와 같이 CSS는 실제로 프로그래밍 언어는 아닙니다. 마크업(markup) 언어 도 아닙니다. Style sheet 언어 입니다.<br>
+            HTML 문서에 있는 요소들에 선택적으로 스타일을 적용할 수 있다는 말입니다.
+        </div>
+    </div>
+</p>
     
 </body>
 </html>
